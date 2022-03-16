@@ -23,7 +23,7 @@ import BadgeDownloadGoogle from "src/components/badge_download_google.svelte";
       남은 돈은 저금해 드립니다.
     </p>
     <div class="badge-container">
-      <a href="/">
+      <a href="https://apps.apple.com/kr/app/%EC%A7%84%EC%88%98%EC%9D%98-%EA%B0%80%EA%B3%84%EB%B6%80/id1614177059?l=en" target="_blank">
         <BadgeDownloadApple />
       </a>
       <a href="/">
