@@ -23,10 +23,10 @@ import BadgeDownloadGoogle from "src/components/badge_download_google.svelte";
       남은 돈은 저금해 드립니다.
     </p>
     <div class="badge-container">
-      <a href="https://apps.apple.com/kr/app/%EC%A7%84%EC%88%98%EC%9D%98-%EA%B0%80%EA%B3%84%EB%B6%80/id1614177059?l=en" target="_blank">
+      <a class="apple" href="https://apps.apple.com/kr/app/%EC%A7%84%EC%88%98%EC%9D%98-%EA%B0%80%EA%B3%84%EB%B6%80/id1614177059?l=en" target="_blank">
         <BadgeDownloadApple />
       </a>
-      <a href="/">
+      <a class="google" href="/">
         <BadgeDownloadGoogle />
       </a>
     </div>
@@ -65,34 +65,64 @@ import BadgeDownloadGoogle from "src/components/badge_download_google.svelte";
   h1 {
     margin-bottom: 12px;
 
-    font-size: 32px;
-
     margin-left: 4px;
   }
 
   h2 {
-    margin-left: 10px;
-
     font-size: 72px;
   }
 
   p {
     margin-top: 8px;
     
-    margin-left: 14px;
-    
     font-size: 18px;
   }
 
   .badge-container {
     display: flex;
-    
+
     align-items: center;
-    
-    margin-top: 12px;
+  }
 
-    margin-left: 10px;
+  @media (max-width: 480px) {
+    h2 {
+      margin-top: 4px;
 
-    gap: 8px;
+      font-size: 40px;
+    }
+
+    p {
+      margin-left: 2px;
+    }
+
+    .badge-container {
+      margin-top: 32px;
+
+      flex-direction: column;
+
+      gap: 4px;
+    }
+  }
+
+  @media (min-width: 481px) {
+    h1 {
+      font-size: 32px;
+    }
+
+    h2 {
+      margin-left: 10px;
+    }
+
+    p {
+      margin-left: 14px;
+    }
+
+    .badge-container {
+      margin-top: 12px;
+
+      margin-left: 10px;
+
+      gap: 8px;
+    }
   }
 </style>
