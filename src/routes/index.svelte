@@ -26,7 +26,7 @@ import BadgeDownloadGoogle from "src/components/badge_download_google.svelte";
       <a class="apple" href="https://apps.apple.com/kr/app/%EC%A7%84%EC%88%98%EC%9D%98-%EA%B0%80%EA%B3%84%EB%B6%80/id1614177059?l=en" target="_blank">
         <BadgeDownloadApple />
       </a>
-      <a class="google" href="/">
+      <a class="google" href="https://play.google.com/store/apps/details?id=com.codersproduct.jinsusbudget">
         <BadgeDownloadGoogle />
       </a>
     </div>
